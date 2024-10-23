@@ -12,4 +12,8 @@ router.get('/', (req, res) =>
     dao.findAll(req, res);
 })
 
+router.post('/createitem', (req, res) =>
+{
+    dao.PostMenuItem(req, res);
+})
 module.exports = router;
